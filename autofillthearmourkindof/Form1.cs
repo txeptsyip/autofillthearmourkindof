@@ -55,7 +55,7 @@ namespace autofillthearmourkindof
                 objectIdAttribute.Value = "MapValue";
                 mapValueNode.Attributes.Append(objectIdAttribute);
 
-                XmlNode objectNode = xmlDoc.CreateElement("Attribute");
+                XmlNode objectNode = xmlDoc.CreateElement("attribute");
                 XmlAttribute objectAttribute = xmlDoc.CreateAttribute("id");
                 objectAttribute.Value = "Object";
                 objectNode.Attributes.Append(objectAttribute);
