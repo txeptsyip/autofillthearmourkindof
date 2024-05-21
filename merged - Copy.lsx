@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="2" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>				
+				<node id="GameObjects"> BODY ARMOUR TEMPLATE
+					<attribute id="Description" type="TranslatedString" handle="h6b6095degcf0dg4b0fg8c9fgb805ef6ae91a" version="1" /> New Handle - same as in Localization\English\ModName.txt
+					<attribute id="DisplayName" type="TranslatedString" handle="h94187b75gab45g4e5ag81d5gaa31e5681e74" version="1" /> New Handle - same as in Localization\English\ModName.txt
+					<attribute id="Icon" type="FixedString" value="Item_ALCH_Extract_AcornTruffle" /> Choose an icon
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="d1199dbe-9309-4e4e-913b-ec61c23e3406" /> New UUID - same as RootTemplate in Stats\Generated\Data\Armor.txt
+					<attribute id="Name" type="LSString" value="ARM_NewArmour_splintadamantcloth" /> New name - same as Stats field below
+					<attribute id="ParentTemplateId" type="FixedString" value="168b9099-19f5-44e4-b55c-e64ceb60b71f" /> Uses ARM_Robe_Body
+					<attribute id="Stats" type="FixedString" value="ARM_NewArmour_splintadamantcloth" /> New name - same as Name field	above	
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="Equipment">
+							<attribute id="EquipmentSlots" type="uint32" value="2" />
+							<children>
+								<node id="LongHair" />
+								<node id="ParentRace">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="f07faafa-0c6f-4f79-49a0-e970236b1bd5" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="06aaae02-bb9e-4fa3-00ac-8eb0a513fab0" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="9a8bbeba-850c-402f-c5ba-15ff6e699764" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6d38f246-15cb-48b5-859b-8037a7168ea7" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="eb81b1de-985e-4e3a-7385-17571fdc5ca1" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6dd3db4f-e2db-4097-2eb8-f312f9792e4c" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+									</children>
+								</node>
+								<node id="ShortHair" />
+								<node id="Slot">
+									<attribute id="Object" type="FixedString" value="Body" />
+								</node>
+								<node id="VisualSet">
+									<attribute id="BodySetVisual" type="FixedString" value="" />
+									<attribute id="ShowEquipmentVisuals" type="bool" value="False" />
+									<children>
+										<node id="MaterialOverrides">
+											<attribute id="MaterialResource" type="FixedString" value="" />
+											<children>
+												<node id="ColorPreset">
+													<attribute id="ForcePresetValues" type="bool" value="True" />
+													<attribute id="GroupName" type="FixedString" value="02 Colour" />
+													<attribute id="MaterialPresetResource" type="FixedString" value="b53628e6-077d-0188-8398-49d7c8b51f65" />
+												</node>
+												<node id="MaterialPresets" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Visuals">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="7d73f501-f65e-46af-a13b-2cacf3985d05" /> Human_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="71180b76-5752-4a97-b71f-911a69197f58" /> Human_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" />
+												</node>													
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="e39505f7-f576-4e70-9ea9-298e38cd111a" /> Strong_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="47c0315c-7dc6-4862-b39b-8bf3a10f8b54" /> Strong_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>													
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="f07faafa-0c6f-4f79-a049-70e96b23d51b" /> Githyanki_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="06aaae02-bb9e-4fa3-ac00-b08e13a5b0fa" /> Githyanki_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>													
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="abf674d2-2ea4-4a74-ade0-125429f69f83" /> Dwarf_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="b4a34ce7-41be-44d9-8486-938fe1472149" /> Dwarf_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>												
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="a933e2a8-aee1-4ecb-80d2-8f47b706f024" /> Halfling_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="8f00cf38-4588-433a-8175-8acdbbf33f33" /> Halfling_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>													
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="5640e766-aa53-428d-815b-6a0b4ef95aca" /> Gnome_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="c491d027-4332-4fda-948f-4a3df6772baa" /> Gnome_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>												
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="9a8bbeba-850c-402f-bac5-ff15696e6497" /> Dragonborn_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6d38f246-15cb-48b5-9b85-378016a7a78e" /> Dragonborn_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>												
+											</children>
+										</node>										
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6dd3db4f-e2db-4097-b82e-12f379f94c2e" /> Half_Orc_Male
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>											
+											</children>
+										</node>		
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="eb81b1de-985e-4e3a-8573-5717dc1fa15c" /> Half-Orc_Female
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="" /> 
+												</node>															
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>	
+			</children>
+		</node>
+	</region>
+</save>
