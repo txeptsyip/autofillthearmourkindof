@@ -33,6 +33,10 @@
             this.HumanMaleInput = new System.Windows.Forms.TextBox();
             this.Removefromhumanmalelist = new System.Windows.Forms.Button();
             this.Writetofile = new System.Windows.Forms.Button();
+            this.HumanFemaleList = new System.Windows.Forms.ListBox();
+            this.HumanFemaleInput = new System.Windows.Forms.TextBox();
+            this.addtohumanfemale = new System.Windows.Forms.Button();
+            this.removefromhumanfemale = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addtohumanmale
@@ -81,11 +85,50 @@
             this.Writetofile.UseVisualStyleBackColor = true;
             this.Writetofile.Click += new System.EventHandler(this.Writetofile_Click);
             // 
+            // HumanFemaleList
+            // 
+            this.HumanFemaleList.FormattingEnabled = true;
+            this.HumanFemaleList.Location = new System.Drawing.Point(206, 13);
+            this.HumanFemaleList.Name = "HumanFemaleList";
+            this.HumanFemaleList.Size = new System.Drawing.Size(161, 95);
+            this.HumanFemaleList.TabIndex = 5;
+            // 
+            // HumanFemaIenput
+            // 
+            this.HumanFemaleInput.Location = new System.Drawing.Point(206, 112);
+            this.HumanFemaleInput.Name = "HumanFemaIenput";
+            this.HumanFemaleInput.Size = new System.Drawing.Size(100, 20);
+            this.HumanFemaleInput.TabIndex = 6;
+            // 
+            // addtohumanfemale
+            // 
+            this.addtohumanfemale.Location = new System.Drawing.Point(206, 139);
+            this.addtohumanfemale.Name = "addtohumanfemale";
+            this.addtohumanfemale.Size = new System.Drawing.Size(75, 23);
+            this.addtohumanfemale.TabIndex = 7;
+            this.addtohumanfemale.Text = "button1";
+            this.addtohumanfemale.UseVisualStyleBackColor = true;
+            this.addtohumanfemale.Click += new System.EventHandler(this.addtohumanfemale_Click);
+            // 
+            // removefromhumanfemale
+            // 
+            this.removefromhumanfemale.Location = new System.Drawing.Point(288, 139);
+            this.removefromhumanfemale.Name = "removefromhumanfemale";
+            this.removefromhumanfemale.Size = new System.Drawing.Size(75, 23);
+            this.removefromhumanfemale.TabIndex = 8;
+            this.removefromhumanfemale.Text = "button1";
+            this.removefromhumanfemale.UseVisualStyleBackColor = true;
+            this.removefromhumanfemale.Click += new System.EventHandler(this.removefromhumanfemale_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.removefromhumanfemale);
+            this.Controls.Add(this.addtohumanfemale);
+            this.Controls.Add(this.HumanFemaleInput);
+            this.Controls.Add(this.HumanFemaleList);
             this.Controls.Add(this.Writetofile);
             this.Controls.Add(this.Removefromhumanmalelist);
             this.Controls.Add(this.HumanMaleInput);
@@ -106,6 +149,10 @@
         private System.Windows.Forms.TextBox HumanMaleInput;
         private System.Windows.Forms.Button Removefromhumanmalelist;
         private System.Windows.Forms.Button Writetofile;
+        private System.Windows.Forms.ListBox HumanFemaleList;
+        private System.Windows.Forms.TextBox HumanFemaleInput;
+        private System.Windows.Forms.Button addtohumanfemale;
+        private System.Windows.Forms.Button removefromhumanfemale;
     }
 }
 

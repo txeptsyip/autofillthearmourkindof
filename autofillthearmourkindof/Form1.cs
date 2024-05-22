@@ -42,11 +42,36 @@ namespace autofillthearmourkindof
             HumanMaleList.Items.RemoveAt(HumanMaleList.SelectedIndex);
         }
 
+        private void addtohumanfemale_Click(object sender, EventArgs e)
+        {
+            HumanFemaleList.Items.Add(HumanFemaleInput.Text);
+            HumanFemaleInput.Text = "";
+        }
+
+        private void removefromhumanfemale_Click(object sender, EventArgs e)
+        {
+            HumanFemaleList.Items.RemoveAt(HumanFemaleList.SelectedIndex);
+        }
+
         private void Writetofile_Click(object sender, EventArgs e)
         {
             //string selectedValue = HumanMaleList.SelectedItem?.ToString();
 
-            foreach (string selectedValue in HumanMaleList.Items)
+
+            writetofile(HumanMaleList, "7d73f501-f65e-46af-a13b-2cacf3985d05");
+            writetofile(HumanFemaleList, "71180b76-5752-4a97-b71f-911a69197f58");
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Please select a value from the ListBox.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //MessageBox.Show($"Data saved for '{selectedValue}'", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void writetofile(ListBox boxlist, string raceUUID)
+        {
+            foreach (string selectedValue in boxlist.Items)
             {
                 //if (!string.IsNullOrEmpty(selectedValue))
                 //{
@@ -68,21 +93,14 @@ namespace autofillthearmourkindof
 
                 mapValueNode.AppendChild(objectNode);
 
-                XmlNode existingObjectNode = xmlDoc.SelectSingleNode("//node[@id='Object'][attribute/@value='7d73f501-f65e-46af-a13b-2cacf3985d05']");
+                XmlNode existingObjectNode = xmlDoc.SelectSingleNode($"//node[@id='Object'][attribute/@value='{raceUUID}']");
                 existingObjectNode?.AppendChild(mapValueNode);
 
             }
 
-                xmlDoc.Save("modified_xml_file.xml");
-
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Please select a value from the ListBox.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            //MessageBox.Show($"Data saved for '{selectedValue}'", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            xmlDoc.Save("modified_xml_file.xml");
         }
-            
+
+
     }
 }
