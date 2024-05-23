@@ -61,6 +61,38 @@
             this.AddtoGithyankiF = new System.Windows.Forms.Button();
             this.DwarfFInput = new System.Windows.Forms.TextBox();
             this.DwarfFList = new System.Windows.Forms.ListBox();
+            this.RemoveFromHalflingF = new System.Windows.Forms.Button();
+            this.AddtoHalflingF = new System.Windows.Forms.Button();
+            this.GnomeFInput = new System.Windows.Forms.TextBox();
+            this.GnomeFList = new System.Windows.Forms.ListBox();
+            this.RemoveFromHalflingM = new System.Windows.Forms.Button();
+            this.AddtoHalflingM = new System.Windows.Forms.Button();
+            this.GnomeMInput = new System.Windows.Forms.TextBox();
+            this.GnomeMList = new System.Windows.Forms.ListBox();
+            this.RemoveFromGnomeF = new System.Windows.Forms.Button();
+            this.AddtoGnomeF = new System.Windows.Forms.Button();
+            this.HalflingFInput = new System.Windows.Forms.TextBox();
+            this.HalflingFList = new System.Windows.Forms.ListBox();
+            this.RemovefromGnomeM = new System.Windows.Forms.Button();
+            this.AddtoGnomeM = new System.Windows.Forms.Button();
+            this.HalflingMInput = new System.Windows.Forms.TextBox();
+            this.HalflingMList = new System.Windows.Forms.ListBox();
+            this.RemoveFromDragonbornF = new System.Windows.Forms.Button();
+            this.AddtoDragonbornF = new System.Windows.Forms.Button();
+            this.HalfOrcFInput = new System.Windows.Forms.TextBox();
+            this.HalfOrcFList = new System.Windows.Forms.ListBox();
+            this.RemoveFromDragonbornM = new System.Windows.Forms.Button();
+            this.AddtoDragonbornM = new System.Windows.Forms.Button();
+            this.HalfOrcMInput = new System.Windows.Forms.TextBox();
+            this.HalfOrcMList = new System.Windows.Forms.ListBox();
+            this.RemoveFromHalfOrcF = new System.Windows.Forms.Button();
+            this.AddtoHalfOrcF = new System.Windows.Forms.Button();
+            this.DragonbornFInput = new System.Windows.Forms.TextBox();
+            this.DragonbornFList = new System.Windows.Forms.ListBox();
+            this.RemoveFromHalfOrcM = new System.Windows.Forms.Button();
+            this.AddtoHalfOrcM = new System.Windows.Forms.Button();
+            this.DragonbornMInput = new System.Windows.Forms.TextBox();
+            this.DragonbornMList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // addtohumanmale
@@ -87,7 +119,6 @@
             this.HumanMaleInput.Name = "HumanMaleInput";
             this.HumanMaleInput.Size = new System.Drawing.Size(187, 20);
             this.HumanMaleInput.TabIndex = 2;
-            this.HumanMaleInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Removefromhumanmalelist
             // 
@@ -101,7 +132,7 @@
             // 
             // Writetofile
             // 
-            this.Writetofile.Location = new System.Drawing.Point(701, 575);
+            this.Writetofile.Location = new System.Drawing.Point(704, 664);
             this.Writetofile.Name = "Writetofile";
             this.Writetofile.Size = new System.Drawing.Size(75, 23);
             this.Writetofile.TabIndex = 4;
@@ -354,11 +385,319 @@
             this.DwarfFList.Size = new System.Drawing.Size(187, 95);
             this.DwarfFList.TabIndex = 29;
             // 
+            // RemoveFromHalflingF
+            // 
+            this.RemoveFromHalflingF.Location = new System.Drawing.Point(303, 452);
+            this.RemoveFromHalflingF.Name = "RemoveFromHalflingF";
+            this.RemoveFromHalflingF.Size = new System.Drawing.Size(90, 23);
+            this.RemoveFromHalflingF.TabIndex = 48;
+            this.RemoveFromHalflingF.Text = "Remove UUID";
+            this.RemoveFromHalflingF.UseVisualStyleBackColor = true;
+            this.RemoveFromHalflingF.Click += new System.EventHandler(this.RemoveFromHalflingF_Click);
+            // 
+            // AddtoHalflingF
+            // 
+            this.AddtoHalflingF.Location = new System.Drawing.Point(206, 452);
+            this.AddtoHalflingF.Name = "AddtoHalflingF";
+            this.AddtoHalflingF.Size = new System.Drawing.Size(75, 23);
+            this.AddtoHalflingF.TabIndex = 47;
+            this.AddtoHalflingF.Text = "Add UUID";
+            this.AddtoHalflingF.UseVisualStyleBackColor = true;
+            this.AddtoHalflingF.Click += new System.EventHandler(this.AddtoHalflingF_Click);
+            // 
+            // GnomeFInput
+            // 
+            this.GnomeFInput.Location = new System.Drawing.Point(592, 426);
+            this.GnomeFInput.Name = "GnomeFInput";
+            this.GnomeFInput.Size = new System.Drawing.Size(187, 20);
+            this.GnomeFInput.TabIndex = 46;
+            // 
+            // GnomeFList
+            // 
+            this.GnomeFList.FormattingEnabled = true;
+            this.GnomeFList.Location = new System.Drawing.Point(592, 325);
+            this.GnomeFList.Name = "GnomeFList";
+            this.GnomeFList.Size = new System.Drawing.Size(187, 95);
+            this.GnomeFList.TabIndex = 45;
+            // 
+            // RemoveFromHalflingM
+            // 
+            this.RemoveFromHalflingM.Location = new System.Drawing.Point(110, 452);
+            this.RemoveFromHalflingM.Name = "RemoveFromHalflingM";
+            this.RemoveFromHalflingM.Size = new System.Drawing.Size(90, 23);
+            this.RemoveFromHalflingM.TabIndex = 44;
+            this.RemoveFromHalflingM.Text = "Remove UUID";
+            this.RemoveFromHalflingM.UseVisualStyleBackColor = true;
+            this.RemoveFromHalflingM.Click += new System.EventHandler(this.RemoveFromHalflingM_Click);
+            // 
+            // AddtoHalflingM
+            // 
+            this.AddtoHalflingM.Location = new System.Drawing.Point(12, 452);
+            this.AddtoHalflingM.Name = "AddtoHalflingM";
+            this.AddtoHalflingM.Size = new System.Drawing.Size(75, 23);
+            this.AddtoHalflingM.TabIndex = 43;
+            this.AddtoHalflingM.Text = "Add UUID";
+            this.AddtoHalflingM.UseVisualStyleBackColor = true;
+            this.AddtoHalflingM.Click += new System.EventHandler(this.AddtoHalflingM_Click);
+            // 
+            // GnomeMInput
+            // 
+            this.GnomeMInput.Location = new System.Drawing.Point(399, 425);
+            this.GnomeMInput.Name = "GnomeMInput";
+            this.GnomeMInput.Size = new System.Drawing.Size(187, 20);
+            this.GnomeMInput.TabIndex = 42;
+            // 
+            // GnomeMList
+            // 
+            this.GnomeMList.FormattingEnabled = true;
+            this.GnomeMList.Location = new System.Drawing.Point(399, 324);
+            this.GnomeMList.Name = "GnomeMList";
+            this.GnomeMList.Size = new System.Drawing.Size(187, 95);
+            this.GnomeMList.TabIndex = 41;
+            // 
+            // RemoveFromGnomeF
+            // 
+            this.RemoveFromGnomeF.Location = new System.Drawing.Point(689, 452);
+            this.RemoveFromGnomeF.Name = "RemoveFromGnomeF";
+            this.RemoveFromGnomeF.Size = new System.Drawing.Size(90, 23);
+            this.RemoveFromGnomeF.TabIndex = 40;
+            this.RemoveFromGnomeF.Text = "Remove UUID";
+            this.RemoveFromGnomeF.UseVisualStyleBackColor = true;
+            this.RemoveFromGnomeF.Click += new System.EventHandler(this.RemoveFromGnomeF_Click);
+            // 
+            // AddtoGnomeF
+            // 
+            this.AddtoGnomeF.Location = new System.Drawing.Point(592, 452);
+            this.AddtoGnomeF.Name = "AddtoGnomeF";
+            this.AddtoGnomeF.Size = new System.Drawing.Size(75, 23);
+            this.AddtoGnomeF.TabIndex = 39;
+            this.AddtoGnomeF.Text = "Add UUID";
+            this.AddtoGnomeF.UseVisualStyleBackColor = true;
+            this.AddtoGnomeF.Click += new System.EventHandler(this.AddtoGnomeF_Click);
+            // 
+            // HalflingFInput
+            // 
+            this.HalflingFInput.Location = new System.Drawing.Point(206, 425);
+            this.HalflingFInput.Name = "HalflingFInput";
+            this.HalflingFInput.Size = new System.Drawing.Size(187, 20);
+            this.HalflingFInput.TabIndex = 38;
+            // 
+            // HalflingFList
+            // 
+            this.HalflingFList.FormattingEnabled = true;
+            this.HalflingFList.Location = new System.Drawing.Point(206, 324);
+            this.HalflingFList.Name = "HalflingFList";
+            this.HalflingFList.Size = new System.Drawing.Size(187, 95);
+            this.HalflingFList.TabIndex = 37;
+            // 
+            // RemovefromGnomeM
+            // 
+            this.RemovefromGnomeM.Location = new System.Drawing.Point(496, 452);
+            this.RemovefromGnomeM.Name = "RemovefromGnomeM";
+            this.RemovefromGnomeM.Size = new System.Drawing.Size(90, 23);
+            this.RemovefromGnomeM.TabIndex = 36;
+            this.RemovefromGnomeM.Text = "Remove UUID";
+            this.RemovefromGnomeM.UseVisualStyleBackColor = true;
+            this.RemovefromGnomeM.Click += new System.EventHandler(this.RemovefromGnomeM_Click);
+            // 
+            // AddtoGnomeM
+            // 
+            this.AddtoGnomeM.Location = new System.Drawing.Point(399, 452);
+            this.AddtoGnomeM.Name = "AddtoGnomeM";
+            this.AddtoGnomeM.Size = new System.Drawing.Size(75, 23);
+            this.AddtoGnomeM.TabIndex = 35;
+            this.AddtoGnomeM.Text = "Add UUID";
+            this.AddtoGnomeM.UseVisualStyleBackColor = true;
+            this.AddtoGnomeM.Click += new System.EventHandler(this.AddtoGnomeM_Click);
+            // 
+            // HalflingMInput
+            // 
+            this.HalflingMInput.Location = new System.Drawing.Point(12, 426);
+            this.HalflingMInput.Name = "HalflingMInput";
+            this.HalflingMInput.Size = new System.Drawing.Size(187, 20);
+            this.HalflingMInput.TabIndex = 34;
+            // 
+            // HalflingMList
+            // 
+            this.HalflingMList.FormattingEnabled = true;
+            this.HalflingMList.Location = new System.Drawing.Point(12, 325);
+            this.HalflingMList.Name = "HalflingMList";
+            this.HalflingMList.Size = new System.Drawing.Size(187, 95);
+            this.HalflingMList.TabIndex = 33;
+            // 
+            // RemoveFromDragonbornF
+            // 
+            this.RemoveFromDragonbornF.Location = new System.Drawing.Point(304, 608);
+            this.RemoveFromDragonbornF.Name = "RemoveFromDragonbornF";
+            this.RemoveFromDragonbornF.Size = new System.Drawing.Size(90, 23);
+            this.RemoveFromDragonbornF.TabIndex = 64;
+            this.RemoveFromDragonbornF.Text = "Remove UUID";
+            this.RemoveFromDragonbornF.UseVisualStyleBackColor = true;
+            this.RemoveFromDragonbornF.Click += new System.EventHandler(this.RemoveFromDragonbornF_Click);
+            // 
+            // AddtoDragonbornF
+            // 
+            this.AddtoDragonbornF.Location = new System.Drawing.Point(207, 608);
+            this.AddtoDragonbornF.Name = "AddtoDragonbornF";
+            this.AddtoDragonbornF.Size = new System.Drawing.Size(75, 23);
+            this.AddtoDragonbornF.TabIndex = 63;
+            this.AddtoDragonbornF.Text = "Add UUID";
+            this.AddtoDragonbornF.UseVisualStyleBackColor = true;
+            this.AddtoDragonbornF.Click += new System.EventHandler(this.AddtoDragonbornF_Click);
+            // 
+            // HalfOrcFInput
+            // 
+            this.HalfOrcFInput.Location = new System.Drawing.Point(593, 582);
+            this.HalfOrcFInput.Name = "HalfOrcFInput";
+            this.HalfOrcFInput.Size = new System.Drawing.Size(187, 20);
+            this.HalfOrcFInput.TabIndex = 62;
+            // 
+            // HalfOrcFList
+            // 
+            this.HalfOrcFList.FormattingEnabled = true;
+            this.HalfOrcFList.Location = new System.Drawing.Point(593, 481);
+            this.HalfOrcFList.Name = "HalfOrcFList";
+            this.HalfOrcFList.Size = new System.Drawing.Size(187, 95);
+            this.HalfOrcFList.TabIndex = 61;
+            // 
+            // RemoveFromDragonbornM
+            // 
+            this.RemoveFromDragonbornM.Location = new System.Drawing.Point(111, 608);
+            this.RemoveFromDragonbornM.Name = "RemoveFromDragonbornM";
+            this.RemoveFromDragonbornM.Size = new System.Drawing.Size(90, 23);
+            this.RemoveFromDragonbornM.TabIndex = 60;
+            this.RemoveFromDragonbornM.Text = "Remove UUID";
+            this.RemoveFromDragonbornM.UseVisualStyleBackColor = true;
+            this.RemoveFromDragonbornM.Click += new System.EventHandler(this.RemoveFromDragonbornM_Click);
+            // 
+            // AddtoDragonbornM
+            // 
+            this.AddtoDragonbornM.Location = new System.Drawing.Point(13, 608);
+            this.AddtoDragonbornM.Name = "AddtoDragonbornM";
+            this.AddtoDragonbornM.Size = new System.Drawing.Size(75, 23);
+            this.AddtoDragonbornM.TabIndex = 59;
+            this.AddtoDragonbornM.Text = "Add UUID";
+            this.AddtoDragonbornM.UseVisualStyleBackColor = true;
+            this.AddtoDragonbornM.Click += new System.EventHandler(this.AddtoDragonbornM_Click);
+            // 
+            // HalfOrcMInput
+            // 
+            this.HalfOrcMInput.Location = new System.Drawing.Point(400, 581);
+            this.HalfOrcMInput.Name = "HalfOrcMInput";
+            this.HalfOrcMInput.Size = new System.Drawing.Size(187, 20);
+            this.HalfOrcMInput.TabIndex = 58;
+            // 
+            // HalfOrcMList
+            // 
+            this.HalfOrcMList.FormattingEnabled = true;
+            this.HalfOrcMList.Location = new System.Drawing.Point(400, 480);
+            this.HalfOrcMList.Name = "HalfOrcMList";
+            this.HalfOrcMList.Size = new System.Drawing.Size(187, 95);
+            this.HalfOrcMList.TabIndex = 57;
+            // 
+            // RemoveFromHalfOrcF
+            // 
+            this.RemoveFromHalfOrcF.Location = new System.Drawing.Point(690, 608);
+            this.RemoveFromHalfOrcF.Name = "RemoveFromHalfOrcF";
+            this.RemoveFromHalfOrcF.Size = new System.Drawing.Size(90, 23);
+            this.RemoveFromHalfOrcF.TabIndex = 56;
+            this.RemoveFromHalfOrcF.Text = "Remove UUID";
+            this.RemoveFromHalfOrcF.UseVisualStyleBackColor = true;
+            // 
+            // AddtoHalfOrcF
+            // 
+            this.AddtoHalfOrcF.Location = new System.Drawing.Point(593, 608);
+            this.AddtoHalfOrcF.Name = "AddtoHalfOrcF";
+            this.AddtoHalfOrcF.Size = new System.Drawing.Size(75, 23);
+            this.AddtoHalfOrcF.TabIndex = 55;
+            this.AddtoHalfOrcF.Text = "Add UUID";
+            this.AddtoHalfOrcF.UseVisualStyleBackColor = true;
+            // 
+            // DragonbornFInput
+            // 
+            this.DragonbornFInput.Location = new System.Drawing.Point(207, 581);
+            this.DragonbornFInput.Name = "DragonbornFInput";
+            this.DragonbornFInput.Size = new System.Drawing.Size(187, 20);
+            this.DragonbornFInput.TabIndex = 54;
+            // 
+            // DragonbornFList
+            // 
+            this.DragonbornFList.FormattingEnabled = true;
+            this.DragonbornFList.Location = new System.Drawing.Point(207, 480);
+            this.DragonbornFList.Name = "DragonbornFList";
+            this.DragonbornFList.Size = new System.Drawing.Size(187, 95);
+            this.DragonbornFList.TabIndex = 53;
+            // 
+            // RemoveFromHalfOrcM
+            // 
+            this.RemoveFromHalfOrcM.Location = new System.Drawing.Point(497, 608);
+            this.RemoveFromHalfOrcM.Name = "RemoveFromHalfOrcM";
+            this.RemoveFromHalfOrcM.Size = new System.Drawing.Size(90, 23);
+            this.RemoveFromHalfOrcM.TabIndex = 52;
+            this.RemoveFromHalfOrcM.Text = "Remove UUID";
+            this.RemoveFromHalfOrcM.UseVisualStyleBackColor = true;
+            // 
+            // AddtoHalfOrcM
+            // 
+            this.AddtoHalfOrcM.Location = new System.Drawing.Point(400, 608);
+            this.AddtoHalfOrcM.Name = "AddtoHalfOrcM";
+            this.AddtoHalfOrcM.Size = new System.Drawing.Size(75, 23);
+            this.AddtoHalfOrcM.TabIndex = 51;
+            this.AddtoHalfOrcM.Text = "Add UUID";
+            this.AddtoHalfOrcM.UseVisualStyleBackColor = true;
+            // 
+            // DragonbornMInput
+            // 
+            this.DragonbornMInput.Location = new System.Drawing.Point(13, 582);
+            this.DragonbornMInput.Name = "DragonbornMInput";
+            this.DragonbornMInput.Size = new System.Drawing.Size(187, 20);
+            this.DragonbornMInput.TabIndex = 50;
+            // 
+            // DragonbornMList
+            // 
+            this.DragonbornMList.FormattingEnabled = true;
+            this.DragonbornMList.Location = new System.Drawing.Point(13, 481);
+            this.DragonbornMList.Name = "DragonbornMList";
+            this.DragonbornMList.Size = new System.Drawing.Size(187, 95);
+            this.DragonbornMList.TabIndex = 49;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 610);
+            this.ClientSize = new System.Drawing.Size(800, 699);
+            this.Controls.Add(this.RemoveFromDragonbornF);
+            this.Controls.Add(this.AddtoDragonbornF);
+            this.Controls.Add(this.HalfOrcFInput);
+            this.Controls.Add(this.HalfOrcFList);
+            this.Controls.Add(this.RemoveFromDragonbornM);
+            this.Controls.Add(this.AddtoDragonbornM);
+            this.Controls.Add(this.HalfOrcMInput);
+            this.Controls.Add(this.HalfOrcMList);
+            this.Controls.Add(this.RemoveFromHalfOrcF);
+            this.Controls.Add(this.AddtoHalfOrcF);
+            this.Controls.Add(this.DragonbornFInput);
+            this.Controls.Add(this.DragonbornFList);
+            this.Controls.Add(this.RemoveFromHalfOrcM);
+            this.Controls.Add(this.AddtoHalfOrcM);
+            this.Controls.Add(this.DragonbornMInput);
+            this.Controls.Add(this.DragonbornMList);
+            this.Controls.Add(this.RemoveFromHalflingF);
+            this.Controls.Add(this.AddtoHalflingF);
+            this.Controls.Add(this.GnomeFInput);
+            this.Controls.Add(this.GnomeFList);
+            this.Controls.Add(this.RemoveFromHalflingM);
+            this.Controls.Add(this.AddtoHalflingM);
+            this.Controls.Add(this.GnomeMInput);
+            this.Controls.Add(this.GnomeMList);
+            this.Controls.Add(this.RemoveFromGnomeF);
+            this.Controls.Add(this.AddtoGnomeF);
+            this.Controls.Add(this.HalflingFInput);
+            this.Controls.Add(this.HalflingFList);
+            this.Controls.Add(this.RemovefromGnomeM);
+            this.Controls.Add(this.AddtoGnomeM);
+            this.Controls.Add(this.HalflingMInput);
+            this.Controls.Add(this.HalflingMList);
             this.Controls.Add(this.RemoveFromGithyankiF);
             this.Controls.Add(this.AddtoGithyankiF);
             this.Controls.Add(this.DwarfFInput);
@@ -435,6 +774,38 @@
         private System.Windows.Forms.Button AddtoGithyankiF;
         private System.Windows.Forms.TextBox DwarfFInput;
         private System.Windows.Forms.ListBox DwarfFList;
+        private System.Windows.Forms.Button RemoveFromHalflingF;
+        private System.Windows.Forms.Button AddtoHalflingF;
+        private System.Windows.Forms.TextBox GnomeFInput;
+        private System.Windows.Forms.ListBox GnomeFList;
+        private System.Windows.Forms.Button RemoveFromHalflingM;
+        private System.Windows.Forms.Button AddtoHalflingM;
+        private System.Windows.Forms.TextBox GnomeMInput;
+        private System.Windows.Forms.ListBox GnomeMList;
+        private System.Windows.Forms.Button RemoveFromGnomeF;
+        private System.Windows.Forms.Button AddtoGnomeF;
+        private System.Windows.Forms.TextBox HalflingFInput;
+        private System.Windows.Forms.ListBox HalflingFList;
+        private System.Windows.Forms.Button RemovefromGnomeM;
+        private System.Windows.Forms.Button AddtoGnomeM;
+        private System.Windows.Forms.TextBox HalflingMInput;
+        private System.Windows.Forms.ListBox HalflingMList;
+        private System.Windows.Forms.Button RemoveFromDragonbornF;
+        private System.Windows.Forms.Button AddtoDragonbornF;
+        private System.Windows.Forms.TextBox HalfOrcFInput;
+        private System.Windows.Forms.ListBox HalfOrcFList;
+        private System.Windows.Forms.Button RemoveFromDragonbornM;
+        private System.Windows.Forms.Button AddtoDragonbornM;
+        private System.Windows.Forms.TextBox HalfOrcMInput;
+        private System.Windows.Forms.ListBox HalfOrcMList;
+        private System.Windows.Forms.Button RemoveFromHalfOrcF;
+        private System.Windows.Forms.Button AddtoHalfOrcF;
+        private System.Windows.Forms.TextBox DragonbornFInput;
+        private System.Windows.Forms.ListBox DragonbornFList;
+        private System.Windows.Forms.Button RemoveFromHalfOrcM;
+        private System.Windows.Forms.Button AddtoHalfOrcM;
+        private System.Windows.Forms.TextBox DragonbornMInput;
+        private System.Windows.Forms.ListBox DragonbornMList;
     }
 }
 

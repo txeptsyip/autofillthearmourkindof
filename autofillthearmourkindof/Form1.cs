@@ -62,6 +62,14 @@ namespace autofillthearmourkindof
             writetofile(GithyankiFList, "06aaae02-bb9e-4fa3-ac00-b08e13a5b0fa");
             writetofile(DwarfMList, "abf674d2-2ea4-4a74-ade0-125429f69f83");
             writetofile(DwarfFList, "b4a34ce7-41be-44d9-8486-938fe1472149");
+            writetofile(HalflingMList, "a933e2a8-aee1-4ecb-80d2-8f47b706f024");
+            writetofile(HalflingFList, "8f00cf38-4588-433a-8175-8acdbbf33f33");
+            writetofile(GnomeMList, "5640e766-aa53-428d-815b-6a0b4ef95aca");
+            writetofile(GnomeFList, "c491d027-4332-4fda-948f-4a3df6772baa");
+            writetofile(DragonbornMList, "9a8bbeba-850c-402f-bac5-ff15696e6497");
+            writetofile(DragonbornFList, "6d38f246-15cb-48b5-9b85-378016a7a78e");
+            writetofile(HalfOrcMList, "6dd3db4f-e2db-4097-b82e-12f379f94c2e");
+            writetofile(HalfOrcFList, "eb81b1de-985e-4e3a-8573-5717dc1fa15c");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -75,14 +83,15 @@ namespace autofillthearmourkindof
             HumanMaleInput.Text = "";
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            HumanMaleList.Items.RemoveAt(HumanMaleList.SelectedIndex);
+            if (HumanMaleList.SelectedIndex == -1)
+            { }
+            else
+            {
+                HumanMaleList.Items.RemoveAt(HumanMaleList.SelectedIndex);
+            }
         }
 
         private void addtohumanfemale_Click(object sender, EventArgs e)
@@ -93,7 +102,12 @@ namespace autofillthearmourkindof
 
         private void removefromhumanfemale_Click(object sender, EventArgs e)
         {
-            HumanFemaleList.Items.RemoveAt(HumanFemaleList.SelectedIndex);
+            if (HumanFemaleList.SelectedIndex == -1)
+            { }
+            else
+            {
+                HumanFemaleList.Items.RemoveAt(HumanFemaleList.SelectedIndex);
+            }
         }
 
         private void AddtoStrongMale_Click(object sender, EventArgs e)
@@ -104,7 +118,12 @@ namespace autofillthearmourkindof
 
         private void RemoveFromStrongMale_Click(object sender, EventArgs e)
         {
-            StrongMaleList.Items.RemoveAt(StrongMaleList.SelectedIndex);
+            if (StrongMaleList.SelectedIndex == -1)
+            { }
+            else
+            {
+                StrongMaleList.Items.RemoveAt(StrongMaleList.SelectedIndex);
+            }
         }
 
         private void AddtoStrongFemale_Click(object sender, EventArgs e)
@@ -115,7 +134,12 @@ namespace autofillthearmourkindof
 
         private void RemovefromStrongFemale_Click(object sender, EventArgs e)
         {
-            StrongFemaleList.Items.RemoveAt(StrongFemaleList.SelectedIndex);
+            if (StrongFemaleList.SelectedIndex == -1)
+            { }
+            else
+            {
+                StrongFemaleList.Items.RemoveAt(StrongFemaleList.SelectedIndex);
+            }
         }
 
         private void AddtoGithyankiM_Click(object sender, EventArgs e)
@@ -126,7 +150,12 @@ namespace autofillthearmourkindof
 
         private void RemoveFromGithyankiM_Click(object sender, EventArgs e)
         {
-            GithyankiMList.Items.RemoveAt(GithyankiMList.SelectedIndex);
+            if (GithyankiMList.SelectedIndex == -1)
+            { }
+            else
+            {
+                GithyankiMList.Items.RemoveAt(GithyankiMList.SelectedIndex);
+            }
         }
 
         private void AddtoGithyankiF_Click(object sender, EventArgs e)
@@ -137,7 +166,12 @@ namespace autofillthearmourkindof
 
         private void RemoveFromGithyankiF_Click(object sender, EventArgs e)
         {
-            GithyankiFList.Items.RemoveAt(GithyankiFList.SelectedIndex);
+            if (GithyankiFList.SelectedIndex == -1)
+            { }
+            else
+            {
+                GithyankiFList.Items.RemoveAt(GithyankiFList.SelectedIndex);
+            }
         }
 
         private void AddtoDwarfM_Click(object sender, EventArgs e)
@@ -148,7 +182,12 @@ namespace autofillthearmourkindof
 
         private void RemoveFromDwarfM_Click(object sender, EventArgs e)
         {
-            DwarfMList.Items.RemoveAt(DwarfMList.SelectedIndex);
+            if (DwarfMList.SelectedIndex == -1)
+            { }
+            else
+            { 
+                DwarfMList.Items.RemoveAt(DwarfMList.SelectedIndex);
+            }
         }
 
         private void AddtoDwarfF_Click(object sender, EventArgs e)
@@ -159,7 +198,112 @@ namespace autofillthearmourkindof
 
         private void RemoveFromDwarfF_Click(object sender, EventArgs e)
         {
-            DwarfFList.Items.RemoveAt(DwarfFList.SelectedIndex);
+            if (DwarfFList.SelectedIndex == -1)
+            { }
+            else
+            {
+                DwarfFList.Items.RemoveAt(DwarfFList.SelectedIndex);
+            }
+        }
+
+        private void AddtoHalflingM_Click(object sender, EventArgs e)
+        {
+            HalflingMList.Items.Add(HalflingMInput.Text);
+            HalflingMInput.Text = "";
+        }
+
+        private void RemoveFromHalflingM_Click(object sender, EventArgs e)
+        {
+            if (HalflingMList.SelectedIndex == -1)
+            { }
+            else
+            {
+                HalflingMList.Items.RemoveAt(HalflingMList.SelectedIndex);
+            }
+        }
+
+        private void AddtoHalflingF_Click(object sender, EventArgs e)
+        {
+            HalflingFList.Items.Add(HalflingFInput.Text);
+            HalflingFInput.Text = "";
+        }
+
+        private void RemoveFromHalflingF_Click(object sender, EventArgs e)
+        {
+            if (HalflingFList.SelectedIndex == -1)
+            { }
+            else
+            {
+                HalflingFList.Items.RemoveAt(HalflingFList.SelectedIndex);
+            }
+        }
+
+        private void AddtoGnomeM_Click(object sender, EventArgs e)
+        {
+            GnomeMList.Items.Add(GnomeMInput.Text);
+            GnomeMInput.Text = "";
+        }
+
+        private void RemovefromGnomeM_Click(object sender, EventArgs e)
+        {
+            if (GnomeMList.SelectedIndex == -1)
+            { }
+            else
+            {
+                GnomeMList.Items.RemoveAt(GnomeMList.SelectedIndex);
+            }
+        }
+
+        private void AddtoGnomeF_Click(object sender, EventArgs e)
+        {
+            GnomeFList.Items.Add(GnomeFInput.Text);
+            GnomeFInput.Text = "";
+        }
+
+        private void RemoveFromGnomeF_Click(object sender, EventArgs e)
+        {
+            if (GnomeFList.SelectedIndex == -1)
+            { }
+            else
+            {
+                GnomeFList.Items.RemoveAt(GnomeFList.SelectedIndex);
+            }
+        }
+
+        private void AddtoDragonbornM_Click(object sender, EventArgs e)
+        {
+            DragonbornMList.Items.Add(DragonbornMInput.Text);
+            DragonbornMInput.Text = "";
+        }
+
+        private void RemoveFromDragonbornM_Click(object sender, EventArgs e)
+        {
+            if (DragonbornMList.SelectedIndex == -1)
+            {
+
+            }
+            else
+            {
+                DragonbornMList.Items.RemoveAt(DragonbornMList.SelectedIndex);
+            }
+        }
+
+        private void AddtoDragonbornF_Click(object sender, EventArgs e)
+        {
+            DragonbornFList.Items.Add(DragonbornFInput.Text);
+            DragonbornFInput.Text = "";
+        }
+
+        private void RemoveFromDragonbornF_Click(object sender, EventArgs e)
+        {
+            if (DragonbornFList.SelectedIndex == -1)
+            {
+                
+            }
+            else
+            {
+                DragonbornFList.Items.RemoveAt(DragonbornFList.SelectedIndex);
+            }
         }
     }
 }
